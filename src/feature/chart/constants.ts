@@ -1,6 +1,6 @@
-import { CrosshairMode } from 'lightweight-charts';
+import { CrosshairMode, ChartOptions, DeepPartial } from 'lightweight-charts';
 
-export const CHART_SETTINGS = {
+export const CHART_SETTINGS: DeepPartial<ChartOptions> = {
     layout: {
         textColor: '#81818D',
         fontSize: 16,
@@ -18,5 +18,5 @@ export const CHART_SETTINGS = {
     },
     timeScale: {
         borderColor: '#DDE0E9',
-    },
+    }
 }

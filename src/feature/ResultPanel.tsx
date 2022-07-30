@@ -5,7 +5,7 @@ import { Trader } from '../types';
 import { addCurrency, addPercent, formatDate } from '../utils';
 import { Chart, Parameter } from './';
 
-export const ResultPanel: FC<{currentTrader: Trader}>= ({currentTrader}) => {
+export const ResultPanel: FC<{currentTrader: Trader, className?: string}>= ({currentTrader, className}) => {
     const {monthly_profit: monthly, total_profit: totlal, capital, chart} = currentTrader;
 
     const data = useMemo(()=> {
@@ -16,7 +16,7 @@ export const ResultPanel: FC<{currentTrader: Trader}>= ({currentTrader}) => {
     }, [chart]);
 
     return (
-            <Box>
+            <Box className={className}>
                 <TopPanel>
                     <Parameter title="Monthly profit" result={addPercent(monthly)}/>
                     <Parameter title="Total profit" result={addPercent(totlal)}/>
@@ -30,7 +30,7 @@ export const ResultPanel: FC<{currentTrader: Trader}>= ({currentTrader}) => {
 
 const Box = styled.div`
     border-radius: 8px;
-    border: 1px solid grey;
+    border: 1px solid #EBECEF;
     flex-grow: 1;
     padding: 28px 24px 24px;
 `
