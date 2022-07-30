@@ -7,17 +7,17 @@ export const useRandomTraders = () => {
     const [allTraders, setAllTraders] = useState<Trader[]>([]);
     const [traders, setTraders] = useState<Trader[]>([]);
 
-    useEffect(()=> {
+    useEffect(() => {
         const allTraders = getTraders();
 
         setAllTraders(allTraders);
-    }, [])
+    }, []);
 
-    useEffect(()=> {
+    useEffect(() => {
         const result = randomFromArray(allTraders, 4);
-        
-        setTraders(result)
+
+        setTraders(result);
     }, [allTraders]);
 
     return traders;
-}
+};
