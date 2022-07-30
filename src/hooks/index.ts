@@ -1,1 +1,1 @@
-export {useRandomTraders} from './useRandomTraders';
+export { useRandomTraders } from './useRandomTraders';

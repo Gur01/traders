@@ -1,1 +1,4 @@
-export interface ChartData { time: string; value: number; }
+export interface ChartData {
+    time: string;
+    value: number;
+}

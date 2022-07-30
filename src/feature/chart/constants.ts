@@ -18,5 +18,5 @@ export const CHART_SETTINGS: DeepPartial<ChartOptions> = {
     },
     timeScale: {
         borderColor: '#DDE0E9',
-    }
-}
+    },
+};

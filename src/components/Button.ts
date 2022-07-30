@@ -1,10 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Button = styled.button`
-    background-color: #8A24F3;
+    background-color: #8a24f3;
     border-radius: 6px;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     font-family: 'Roboto';
     font-size: 16px;
@@ -14,11 +14,10 @@ export const Button = styled.button`
     transition: background-color 0.2s ease;
 
     &:hover {
-        background-color: #701BC8;
+        background-color: #701bc8;
     }
 
     &:active {
-        background-color: #4F118F;
+        background-color: #4f118f;
     }
-    
-`
+`;

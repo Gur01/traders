@@ -5,4 +5,3 @@ export { ResultPanel } from './ResultPanel';
 export { SelectPanel } from './SelectPanel';
 export { TraderButton } from './TraderButton';
 export { TraderScreen } from './TraderScreen';
-

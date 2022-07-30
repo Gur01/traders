@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.h1`
-    color: #0A071E;
+    color: #0a071e;
     font-family: 'Gotham Pro', sans-serif;
     font-size: 28px;
     font-style: normal;
@@ -15,4 +15,4 @@ export const Header = styled.h1`
         font-weight: 400;
         line-height: 82px;
     }
-`
+`;

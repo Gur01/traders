@@ -9,24 +9,39 @@ export const TraderScreen = () => {
     const traders = useRandomTraders();
 
     const selectTrader = (index: number) => {
-        setSelectedTrader(index)
-    }
-    
+        setSelectedTrader(index);
+    };
+
     const currentTrader = traders[selectedTrader];
 
     return (
         <PanelBlock>
-            <StyledSelectPanel traders={traders} selectTrader={selectTrader} selectedTrader={selectedTrader}></StyledSelectPanel>
-            {currentTrader && <StyledResultPanel currentTrader={currentTrader}></StyledResultPanel>}
-            {currentTrader && <StyledMobileResult traders={traders} currentTrader={currentTrader} selectedTrader={selectedTrader} selectTrader={selectTrader}></StyledMobileResult>}
+            <StyledSelectPanel
+                traders={traders}
+                selectTrader={selectTrader}
+                selectedTrader={selectedTrader}
+            ></StyledSelectPanel>
+            {currentTrader && (
+                <StyledResultPanel
+                    currentTrader={currentTrader}
+                ></StyledResultPanel>
+            )}
+            {currentTrader && (
+                <StyledMobileResult
+                    traders={traders}
+                    currentTrader={currentTrader}
+                    selectedTrader={selectedTrader}
+                    selectTrader={selectTrader}
+                ></StyledMobileResult>
+            )}
         </PanelBlock>
-    )
-}
+    );
+};
 
 const PanelBlock = styled.div`
     display: flex;
-	justify-content: space-between;
-`
+    justify-content: space-between;
+`;
 
 const StyledSelectPanel = styled(SelectPanel)`
     display: none;
@@ -34,7 +49,7 @@ const StyledSelectPanel = styled(SelectPanel)`
     @media screen and (min-width: 1024px) {
         display: block;
     }
-`
+`;
 
 const StyledResultPanel = styled(ResultPanel)`
     display: none;
@@ -42,13 +57,12 @@ const StyledResultPanel = styled(ResultPanel)`
     @media screen and (min-width: 1024px) {
         display: block;
     }
-`
+`;
 
 const StyledMobileResult = styled(MobileResult)`
     display: block;
-    
+
     @media screen and (min-width: 1024px) {
         display: none;
     }
-`
-
+`;

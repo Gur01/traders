@@ -4,7 +4,8 @@ import { Button } from '../components';
 import { Trader } from '../types';
 import { addPercent, formatDate } from '../utils';
 import { Chart, Parameter } from './';
-import { StyledFlag, Name, Percentage, NameBlock} from './TraderButton';
+import { StyledFlag, Name, Percentage, NameBlock } from './TraderButton';
+
 export const MobileResult: FC<{
     currentTrader: Trader,
     className?: string,
