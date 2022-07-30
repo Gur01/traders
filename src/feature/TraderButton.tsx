@@ -15,9 +15,9 @@ export const TraderButton: FC<{trader: Trader, onClick: () => void, isSelected: 
 }
 
 const Box = styled.div<{isSelected: boolean}>`
-        padding: 20px 24px;
-        display: flex;
         cursor: pointer;
+        display: flex;
+        padding: 20px 24px;
 
         ${({isSelected}) => isSelected && css`
             background-color: #F5F7F9;
@@ -35,9 +35,9 @@ const NameBlock = styled.div`
 const Name = styled.div`
     color: #080816;
     font-family: 'Roboto';
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
     line-height: 28px;
 `
 
